@@ -1,0 +1,125 @@
+.seattle{
+  width: 100%;
+  margin-top: 5%;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+.header{
+  text-align: center;
+}
+.type p{
+  color: #fff; 
+  background-color: rgba(0,0,0,.2);
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: "Courier";
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px auto;
+  margin-top: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+.type p:nth-child(2){
+  animation: type2 8s steps(60, end);
+  margin: 0px auto;
+}
+
+.boat{
+  margin-bottom: 10%;
+}
+
+.git, .email{
+  color: #000;
+}
+
+.hide{
+  display: none;
+}
+
+.pics-caption{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.type span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.java-expresso{
+  width: 300px;
+}
+
+.leaf{
+  width: 1500px;
+}
+
+.contigo{
+  width: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
