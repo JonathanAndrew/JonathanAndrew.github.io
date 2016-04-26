@@ -8,10 +8,20 @@ nav{
   z-index: 999;
   top: 0;
 }
-
-nav ul a{
-  padding: 13px 15px !important;
+.boat-container{
+  min-height: 200px !important;
 }
+.bridge-container{
+  min-height: 190px !important;
+}
+.bridge{
+  position: absolute;
+  top: 10%;
+}
+
+/*nav ul a{
+  padding: 13px 15px !important;
+}*/
 .section{
   padding-top: 0 !important;
 }
@@ -20,14 +30,41 @@ nav ul a{
 }
 
 .seattle{
-  width: 100%;
-  margin-top: 5%;
+  min-width: 310px !important;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul a,
-nav .brand-logo {
+.download-png{
+  width: 40px;
+  margin-top: 10px;
+}
+.resume{
+  margin-bottom: 10px;
+}
+nav ul li{
+  display: inline;
+}
+
+nav ul a{
   color: #444;
+  font-size: 1.8em;
+  font-family: 'Cabin', sans-serif; 
+}
+
+.about-link{
+  margin-top: 10px;
+}
+nav .brand-logo{
+  font-family: 'Lobster Two', cursive !important;
   font-size: 1.5em;
+  margin:8px 0 0 25px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #000 !important;
+}
+nav .brand-logo:hover{
+  text-decoration: underline;
 }
 
 p {
@@ -39,32 +76,32 @@ p {
 }
 
 .parallax-container {
-  min-height: 200px;
-  margin-top: -30px;
+  min-height: 0px;
+  margin-top: -35px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 98%;
+}
 .header{
   text-align: center;
 }
 .type p{
+  text-indent: 10px;
   color: #fff; 
-  width: 355px !important;
   /*background-color: rgba(0,0,0,.2);*/
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: "Courier";
-  font-size: 14px;
+  font-size: 15.5px;
   font-weight: bold;
   margin: 0px auto;
   margin-top: 200px;
   white-space: nowrap;
   overflow: hidden;
-  width: 30em;
+  width: 100%;
   animation: type 3.5s steps(60, end); 
 }
 
@@ -72,7 +109,9 @@ p {
   animation: type2 7s steps(60, end);
   margin: 0px auto;
 }
-
+.projects{
+  margin: 0 0 15px 0;
+}
 .boat{
   margin-bottom: 10%;
 }
@@ -117,39 +156,168 @@ p {
   width: 300px;
 }
 
-.contigo{
-  width: 300px;
+.contigo,.java-expresso,.beervana{
+  width: 350px;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  text-align: left;
+  text-indent: 25px;
+  width: 90%;
+  font-size: 1.2em;
+  margin: 0 auto;
+  font-family: 'Cabin', sans-serif; 
+}
+.icon-block{
+  text-align: center;
+}
+.icon-block h5{
+  text-decoration: underline
 }
 .container{
   width: 100%;
+}
+.icon{
+  width: 100px;
+}
+.about-me-intro{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Cabin', sans-serif; 
+}
+.about-me-text{
+  font-size: 1.5em;
+  line-height: 3.5rem;
+  font-family: 'Cabin', sans-serif;
+}
+.me{
+  float: left;
+  width: 300px;
+  margin-right: 120px;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside: ellipse(300px 300px at 10% 50%);
+
 }
 
 .info{
   text-align: center;
 }
+.info h5{
+  float: left;
+  margin-top: 10px;
+}
+.info a{
+  margin-top: 10px;
+}
+
+#about{
+  margin-top: 100px;
+  width: 70%;
+  margin: 100px auto;
+}
+.about{
+  text-decoration: underline;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.contact-info{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.email{
+  float: left;
+}
+.email-text{
+  font-size: .65em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.8em;
+  color: #000;
+  font-family: 'Cabin', sans-serif; 
+}
+.material-icons{
+  margin-left: 15px !important;
+}
+a:hover{
+  text-decoration: underline;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .6em;
+}
+.links h5{
+  float: left;
+  margin-right: 15px
+}
+.links{
+  float: right
+}
+.links img{
+  margin-top:10px;
+}
+.links-text{
+  font-size: .65em;
+}
+.linkedin-img{
+  margin-left: 10px;
+}
 
 footer{
   width: 100%;
-  height: 90px;
+  height: 50px;
   position: fixed;
   bottom: 0;
 }
 footer.page-footer{
   padding-top: 0 !important;
 }
-
-@media only screen and (min-width : 768px) and (max-width: 1299px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
+@media only screen and (min-width : 550px) and (max-width: 767px) {
+.seattle{
+  min-height: 242px;
+  margin-top: -10px;
+}
+.boat-container{
+  min-height: 209px !important;
+}
+.bridge-container{
+  min-height: 198px !important;
+  margin-bottom: 15px;
+}
+nav .brand-logo{
+  font-size: 2.4em;
+  margin: -5px 0 0 0;
+}
+a{
+  font-size: .8em;
+}
+.email-text,.links-text{
+  font-size: 1em;
+}
+}
+@media only screen and (min-width : 768px) and (max-width: 979px) {
+nav .brand-logo{
+margin: -10px 0 0 0px;
+font-weight: bold;
+font-size: 2.5em;
+}
+.seattle{
+  min-height: 339px !important;
+  margin-top: -15px;
+}
+.boat-container{
+  min-height: 291px;
+}
+.bridge-container{
+  min-height: 276px !important;
+  margin-bottom: 25px;
+}
+#index-banner .section {
     top: 10%;
   }
-  .parallax-container {
-  margin-top: 0;
-  height: 325px;
-}
 .type p{
   font-size: 1.8em;
   width: 700px !important;
@@ -158,13 +326,62 @@ footer.page-footer{
   width: 300px;
   min-width: 250px;
 }
+a{
+  font-size: .9em;
 }
-
+.email-text,.links-text{
+  font-size: 1em;
+}
+}
+@media only screen and (min-width: 980px) and (max-width: 1299px) {
+nav .brand-logo{
+margin: -7px 0 0 50px;
+font-size: 2.4em;
+}
+.seattle{
+  min-height: 396px;
+  margin-top: -5px;
+}
+.boat-container{
+  min-height: 372px !important;
+}
+.bridge-container{
+  min-height: 352px !important;
+}
+.type p{
+  font-size: 1.8em;
+  width: 700px !important;
+}
+a{
+  font-size: 1em;
+}
+.email-text,.links-text{
+  font-size: 1em;
+}
+}
 @media only screen and (min-width : 1300px) {
-  #index-banner .section {
-    top: 0;
-  }
-
+.seattle{
+  padding-top: 200px;
+  min-height: 572px;
+  margin-top: -55px;
+}
+.boat-container{
+  min-height: 494px !important;
+}
+.bridge-container{
+  min-height: 468px !important;
+}
+#index-banner .section {
+  top: 0;
+}
+nav .brand-logo{
+font-size: 2.5em;
+margin: -10px 0 0 15px;
+}
+.type p{
+  font-size: 1.8em;
+  width: 700px !important;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -175,15 +392,13 @@ footer.page-footer{
   font-size: 2.1em;
   width: 800px !important;
 }
-.parallax-container {
-  margin-top: 56px;
-  padding-top: 50px;
-  max-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-.contigo,.java-expresso{
+.contigo,.java-expresso,.beervana{
   width: 400px;
+}
+a{
+  font-size: 1.2em;
+}
+.email-text,.links-text{
+  font-size: 1.2em;
 }
 }
