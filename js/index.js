@@ -9,12 +9,12 @@ $(document).ready(function(){
 
  });
 
- // $('#portfolio-link').click(function(event){
- // 	event.preventDefault(event);
- // 	$('#about').addClass('hide');
- // 	$('#home')show();
- // 	$('#portfolio-link').hide();
- // 	$('#about-link').show();
- // });
+ $('#portfolio-link').click(function(event){
+ 	event.preventDefault(event);
+ 	$('#about').addClass('hide');
+ 	$('#home').removeClass('hide');
+ 	$('#portfolio-link').addClass('hide');
+ 	$('#about-link').removeClass('hide');
+ });
 
 });
