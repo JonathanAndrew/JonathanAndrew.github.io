@@ -18,10 +18,10 @@ nav{
   position: absolute;
   top: 10%;
 }
-
-/*nav ul a{
-  padding: 13px 15px !important;
-}*/
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .section{
   padding-top: 0 !important;
 }
@@ -172,9 +172,6 @@ p {
 .icon-block h5{
   text-decoration: underline
 }
-.container{
-  width: 100%;
-}
 .icon{
   width: 100px;
 }
@@ -182,13 +179,13 @@ p {
   width: 100%;
 }
 .about-me-intro{
-  margin: -10px 0 0 -10%;
+  margin: -10px 0 0 0;
   text-align: center;
   font-size: 1em;
   color: #fff;
   font-weight: bold;
   padding: 2% 13%;
-  width: 117%;
+  width: 100%;
   font-family: 'Cabin', sans-serif;
 }
 .about-me-text{
@@ -310,6 +307,10 @@ nav .brand-logo{
   letter-spacing: 4px;
   margin: -5px 0 0 0;
 }
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
 a{
   font-size: .8em;
 }
@@ -330,6 +331,10 @@ letter-spacing: 4px;
 .seattle{
   min-height: 339px !important;
   margin-top: -15px;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
 }
 .boat-container{
   min-height: 291px;
@@ -365,6 +370,10 @@ margin: -7px 0 0 50px;
 font-size: 2.4em;
 letter-spacing: 4px;
 }
+.container{
+  max-width: 100% !important;
+  max-width: 100% !important;
+}
 .seattle{
   min-height: 396px;
   margin-top: -5px;
@@ -390,6 +399,10 @@ font-size: 1.4em;
   padding-top: 200px;
   min-height: 572px;
   margin-top: -55px;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
 }
 .boat-container{
   min-height: 494px !important;
@@ -430,5 +443,6 @@ a{
 }
 .about-me-intro{
 font-size: 1.5em;
+width: 100%
 }
 }
