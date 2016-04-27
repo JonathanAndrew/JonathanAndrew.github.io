@@ -514,6 +514,10 @@ font-size: 1.2em;
 #about-link{
   margin-top: 16px;
 }
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
 .home{
   margin-top: 25.5px;
 }
@@ -535,6 +539,19 @@ nav{
 .container{
   max-width: 100% !important;
   width: 100% !important;
+}
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 58% 54%);
+}
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
 }
 .boat-container{
   min-height: 291px;
@@ -561,6 +578,12 @@ a{
 .email-text,.links-text{
   font-size: 1em;
 }
+.email{
+  margin-left: 100px;
+}
+.links{
+  margin-right: 100px;
+}
 .about-me-intro{
 font-size: 1.3em;
 }
@@ -570,54 +593,90 @@ font-size: 1.3em;
 .home{
   margin-top: 25.5px;
 }
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
 .right{
   margin-right: 100px !important;
 }
 }
 @media only screen and (min-width: 980px) and (max-width: 1299px) {
+
 nav .brand-logo{
 margin: 1.5px 0 0 75px;
 font-size: 2.4em;
 letter-spacing: 4px;
 }
+
 nav{
   height: 65px !important;
 }
+
 .type p{
   font-size: 1.5em;
   margin-top: 200px;
 }
+
 .container{
   max-width: 100% !important;
-  max-width: 100% !important;
+  width: 100% !important;
 }
+
 .seattle{
   min-height: 396px;
   margin-top: -5px;
 }
+
 .boat-container{
   min-height: 372px !important;
 }
+
 .bridge-container{
   min-height: 352px !important;
 }
+
 a{
   font-size: 1em;
 }
+
 .email-text,.links-text{
   font-size: 1em;
 }
+
 .about-me-intro{
 font-size: 1.4em;
 }
+
 #about-link{
   margin-top: 16px;
 }
+
 .home{
   margin-top: 25.5px;
 }
+
 .right{
   margin-right: 200px !important;
+}
+
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 60% 54%);
+}
+
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
 }
 }
 @media only screen and (min-width : 1300px) {
@@ -644,8 +703,21 @@ nav{
 }
 nav .brand-logo{
 font-size: 2.5em;
-margin: -3px 0 0 80px;
+margin: -3px 0 0 100px;
 letter-spacing: 4px;
+}
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 66% 54%);
+}
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
 }
 .icon-block {
   padding: 0 15px;
@@ -667,6 +739,12 @@ letter-spacing: 4px;
 a{
   font-size: 1.2em;
 }
+.email{
+  margin-left: 100px;
+}
+.links{
+  margin-right: 100px;
+}
 .email-text,.links-text{
   font-size: 1.2em;
 }
@@ -676,6 +754,10 @@ width: 100%
 }
 #about-link{
   margin-top: 16px;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
 }
 .home{
   margin-top: 25.5px;
