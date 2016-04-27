@@ -31,7 +31,7 @@ nav{
 
 .seattle{
   min-width: 310px !important;
-  margin: 0;
+  margin-top: -35px;
   padding: 0;
 }
 
@@ -295,6 +295,7 @@ footer.page-footer{
 @media only screen and (min-width : 271px) and (max-width: 350px) {
 .seattle{
   min-width: 270px !important;
+  margin-top: -20px;
 }
 nav ul a{
   font-size: 1.5em;
@@ -511,6 +512,7 @@ letter-spacing: 4px;
   }
 .type p{
   font-size: 1.8em;
+  margin-top: 200px;
   width: 700px !important;
 }
 .contigo,.java-expresso{
