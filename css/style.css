@@ -297,6 +297,9 @@ footer.page-footer{
   min-width: 270px !important;
   margin-top: 0;
 }
+nav{
+  height: 55px !important;
+}
 nav ul a{
   font-size: 1.5em;
 }
@@ -376,6 +379,9 @@ a{
   min-width: 310px !important;
   margin-top: 0;
 }
+nav{
+  height: 65px !important;
+}
 nav ul a{
   font-size: 1.8em;
 }
@@ -450,6 +456,9 @@ a{
 }
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
+nav{
+  height: 65px !important;
+}
 .seattle{
   min-height: 242px;
   margin-top: -10px;
@@ -492,6 +501,9 @@ margin: -10px 0 0 0px;
 font-weight: bold;
 font-size: 2.5em;
 letter-spacing: 4px;
+}
+nav{
+  height: 65px !important;
 }
 .seattle{
   min-height: 339px !important;
@@ -536,6 +548,9 @@ margin: -7px 0 0 50px;
 font-size: 2.4em;
 letter-spacing: 4px;
 }
+nav{
+  height: 65px !important;
+}
 .type p{
   font-size: 1.5em;
   margin-top: 200px;
@@ -569,6 +584,9 @@ font-size: 1.4em;
   padding-top: 200px;
   min-height: 572px;
   margin-top: -55px;
+}
+nav{
+  height: 65px !important;
 }
 .container{
   max-width: 100% !important;
