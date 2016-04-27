@@ -31,7 +31,7 @@ nav{
 
 .seattle{
   min-width: 310px !important;
-  margin-top: -50px;
+  margin-top: -20px;
   padding: 0;
 }
 
@@ -76,7 +76,6 @@ p {
 
 .parallax-container {
   min-height: 0px;
-  margin-top: -40px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -295,7 +294,7 @@ footer.page-footer{
 @media only screen and (min-width : 271px) and (max-width: 350px) {
 .seattle{
   min-width: 270px !important;
-  margin-top: 0;
+  margin-top: -20px;
 }
 nav{
   height: 55px !important;
@@ -377,7 +376,7 @@ a{
 @media only screen and (min-width : 351px) and (max-width: 549px) {
 .seattle{
   min-width: 310px !important;
-  margin-top: 0;
+  margin-top: -25px;
 }
 nav{
   height: 65px !important;
@@ -461,7 +460,7 @@ nav{
 }
 .seattle{
   min-height: 242px;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 .boat-container{
   min-height: 209px !important;
