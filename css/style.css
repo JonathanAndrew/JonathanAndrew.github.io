@@ -31,7 +31,7 @@ nav{
 
 .seattle{
   min-width: 310px !important;
-  margin-top: 20px;
+  margin-top: -50px;
   padding: 0;
 }
 
@@ -533,6 +533,10 @@ nav .brand-logo{
 margin: -7px 0 0 50px;
 font-size: 2.4em;
 letter-spacing: 4px;
+}
+.type p{
+  font-size: 1.5em;
+  margin-top: 200px;
 }
 .container{
   max-width: 100% !important;
