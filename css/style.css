@@ -48,7 +48,7 @@ nav ul li{
 
 nav ul a{
   color: #444;
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-family: 'Cabin', sans-serif; 
 }
 
@@ -57,7 +57,7 @@ nav ul a{
 }
 nav .brand-logo{
   font-family: 'Lobster Two', cursive !important;
-  font-size: 1.45em;
+  font-size: 1.2em;
   margin:8px 0 0 25px;
   font-weight: bold;
   color: #000 !important;
@@ -90,17 +90,16 @@ p {
 .type p{
   text-indent: 10px;
   color: #fff; 
-  /*background-color: rgba(0,0,0,.2);*/
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: "Courier";
-  font-size: 15.5px;
+  font-size: 11px;
   font-weight: bold;
   margin: 0px auto;
-  margin-top: 200px;
+  margin-top: 120px;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   animation: type 3.5s steps(60, end); 
 }
 
@@ -125,7 +124,7 @@ p {
 
 .pics-caption{
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .type span{
@@ -156,7 +155,7 @@ p {
 }
 
 .contigo,.java-expresso,.beervana{
-  width: 350px;
+  width: 250px;
 }
 .contigo-text,.java-expresso-text,.beervana-text{
   text-align: left;
@@ -179,7 +178,7 @@ p {
   width: 100%;
 }
 .about-me-intro{
-  margin: -10px 0 0 0;
+  margin: -20px 0 0 0;
   text-align: center;
   font-size: 1em;
   color: #fff;
@@ -189,13 +188,13 @@ p {
   font-family: 'Cabin', sans-serif;
 }
 .about-me-text{
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 3.5rem;
   font-family: 'Cabin', sans-serif;
 }
 .me{
   float: left;
-  width: 300px;
+  width: 250px;
   margin-right: 120px;
   border-radius: 50%;
   -webkit-shape-outside:circle();
@@ -224,7 +223,7 @@ p {
 }
 .about,.frameworks{
   text-align: center;
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 .contact-info{
   width: 100%;
@@ -251,7 +250,7 @@ a:hover{
 }
 a{
    color: #0059b3 !important;
-   font-size: .6em;
+   font-size: .45em;
 }
 .links h5{
   float: left;
@@ -264,7 +263,8 @@ a{
   margin-top:10px;
 }
 .links-text{
-  font-size: .65em;
+  display: none;
+  font-size: .45em;
 }
 .linkedin-img{
   margin-left: 10px;
@@ -279,7 +279,9 @@ a{
 }
 .testimonal{
   padding: 2%;
-  font-size: 1.2em;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1em;
 }
 footer{
   width: 100%;
@@ -289,6 +291,161 @@ footer{
 }
 footer.page-footer{
   padding-top: 0 !important;
+}
+@media only screen and (min-width : 271px) and (max-width: 350px) {
+.seattle{
+  min-width: 270px !important;
+}
+nav ul a{
+  font-size: 1.5em;
+}
+nav .brand-logo{
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+.type p{
+  font-size: 12px;
+  margin-top: 150px;
+  width: 90%;
+  animation: type 3.5s steps(60, end); 
+}
+.pics-caption{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.java-expresso{
+  width: 250px;
+}
+
+.leaf{
+  width: 250px;
+}
+
+.contigo,.java-expresso,.beervana{
+  width: 250px;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  font-size: 1em;
+}
+.about-me-intro{
+  margin: -20px 0 0 0;
+  font-size: 1.2em;
+  padding: 2% 13%;
+}
+.about-me-text{
+  font-size: 1.2em;
+  line-height: 3.5rem;
+}
+.me{
+  float: left;
+  width: 270px;
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside: ellipse(300px 300px at 10% 50%);
+
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2em;
+}
+.email-text{
+  font-size: .55em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.5em;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .5em;
+}
+.testimonal{
+  padding: 2%;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+.links-text{
+  font-size: .55em;
+}
+}
+@media only screen and (min-width : 351px) and (max-width: 549px) {
+.seattle{
+  min-width: 310px !important;
+}
+nav ul a{
+  font-size: 1.8em;
+}
+nav .brand-logo{
+  font-size: 1.55em;
+  letter-spacing: 2px;
+}
+.type p{
+  font-size: 15.5px;
+  margin-top: 200px;
+  width: 100%;
+  animation: type 3.5s steps(60, end); 
+}
+.pics-caption{
+  font-size: 1.5em;
+}
+.java-expresso{
+  width: 400px;
+}
+
+.leaf{
+  width: 300px;
+}
+
+.contigo,.java-expresso,.beervana{
+  width: 350px;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  font-size: 1.2em;
+}
+.about-me-intro{
+  margin: -20px 0 0 0;
+  font-size: 1.2em;
+  padding: 2% 13%;
+  width: 100%;
+}
+.about-me-text{
+  font-size: 1.5em;
+  line-height: 3.5rem;
+}
+.me{
+  width: 300px;
+  margin-right: 120px;
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside: ellipse(300px 300px at 10% 50%);
+
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.email-text{
+  font-size: .65em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.8em;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .6em;
+}
+.links-text{
+  font-size: .65em;
+}
+.testimonal{
+  padding: 2%;
+  font-size: 1.1em;
+  width: 90%;
+  margin: 0 auto;
+}
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
 .seattle{
@@ -319,6 +476,12 @@ a{
 }
 .about-me-intro{
 font-size: 1.2em;
+}
+.testimonal{
+  padding: 2%;
+  width:90%;
+  margin: 0 auto;
+  font-size: 1.2em;
 }
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
