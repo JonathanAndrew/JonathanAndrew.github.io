@@ -76,7 +76,7 @@ p {
 
 .parallax-container {
   min-height: 0px;
-  margin-top: -35px;
+  margin-top: -40px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -295,6 +295,7 @@ footer.page-footer{
 @media only screen and (min-width : 271px) and (max-width: 350px) {
 .seattle{
   min-width: 270px !important;
+  margin-top: 0;
 }
 nav ul a{
   font-size: 1.5em;
@@ -373,6 +374,7 @@ a{
 @media only screen and (min-width : 351px) and (max-width: 549px) {
 .seattle{
   min-width: 310px !important;
+  margin-top: 0;
 }
 nav ul a{
   font-size: 1.8em;
@@ -405,7 +407,7 @@ nav .brand-logo{
   font-size: 1.2em;
 }
 .about-me-intro{
-  margin: -20px 0 0 0;
+  margin: -25px 0 0 0;
   font-size: 1.2em;
   padding: 2% 13%;
   width: 100%;
