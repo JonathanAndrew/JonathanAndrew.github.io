@@ -19,9 +19,11 @@ nav{
   top: 10%;
 }
 .container{
-  max-width: 100% !important;
-  width: 100% !important;
-}
+  max-width: 250px !important;
+  width: 250px !important;
+  margin: 0 auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;}
 .section{
   padding-top: 0 !important;
 }
@@ -92,7 +94,7 @@ p {
   text-shadow: 1px 1px #000;
   text-align: center;
   font-family: "Courier";
-  font-size: 11px;
+  font-size: 9px;
   font-weight: bold;
   margin: 0px auto;
   margin-top: 120px;
