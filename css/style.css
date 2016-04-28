@@ -19,11 +19,9 @@ nav{
   top: 10%;
 }
 .container{
-  max-width: 250px !important;
-  width: 250px !important;
-  margin: 0 auto !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;}
+  max-width: 100% !important;
+  width: 100% !important;
+}
 .section{
   padding-top: 0 !important;
 }
