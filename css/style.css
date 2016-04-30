@@ -11,7 +11,7 @@ nav{
 .name{
   margin: 0;
   margin-top: 5px;
-  font-size: 1em;
+  font-size: .9em;
 }
 .boat-container{
   min-height: 200px !important;
@@ -65,7 +65,7 @@ nav ul a{
   margin-top: 10px;
 }
 nav .brand-logo{
-  font-family: 'Lobster Two', cursive !important;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   margin:8px 0 0 25px;
   font-weight: bold;
@@ -116,7 +116,7 @@ p {
   margin: 0px auto;
 }
 .projects{
-  margin: 0 0 15px 0;
+  margin: 15px 0 15px 0;
 }
 .boat{
   margin-bottom: 10%;
@@ -133,6 +133,8 @@ p {
 .pics-caption{
   font-weight: bold;
   font-size: 1em;
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
 }
 
 .type span{
@@ -195,7 +197,7 @@ p {
   font-size: 1em;
   color: #fff;
   font-weight: bold;
-  padding: 2% 13%;
+  padding: 2% 5%;
   width: 100%;
   font-family: 'Cabin', sans-serif;
 }
@@ -333,8 +335,8 @@ nav .brand-logo{
   animation: type 3.5s steps(60, end); 
 }
 .pics-caption{
-  font-weight: bold;
   font-size: 1.2em;
+   -webkit-text-stroke-width: .5px;
 }
 .java-expresso{
   width: 250px;
@@ -352,8 +354,8 @@ nav .brand-logo{
 }
 .about-me-intro{
   margin: -20px 0 0 0;
-  font-size: 1.2em;
-  padding: 2% 13%;
+  font-size: 1em;
+  padding: 2% 5%;
 }
 .about-me-text{
   width: 90%;
@@ -396,7 +398,7 @@ a{
 @media only screen and (min-width : 351px) and (max-width: 549px) {
 .seattle{
   min-width: 310px !important;
-  margin-top: -35px;
+  margin-top: -45px;
 }
 nav{
   height: 50px !important;
@@ -415,7 +417,9 @@ nav .brand-logo{
   animation: type 3.5s steps(60, end); 
 }
 .pics-caption{
-  font-size: 1.5em;
+  font-size: 1.2em;
+  -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
 }
 .java-expresso{
   width: 400px;
@@ -433,8 +437,8 @@ nav .brand-logo{
 }
 .about-me-intro{
   margin: -25px 0 0 0;
-  font-size: 1.2em;
-  padding: 2% 13%;
+  font-size: 1em;
+  padding: 2% 5%;
   width: 100%;
 }
 .about-me-text{
@@ -486,6 +490,10 @@ a{
 @media only screen and (min-width : 550px) and (max-width: 767px) {
 nav{
   height: 65px !important;
+}
+.pics-caption{
+  font-size: 1.5em;
+   -webkit-text-stroke-width: 1px;
 }
 .name{
   margin-top: 15px;
@@ -548,6 +556,9 @@ letter-spacing: 4px;
 }
 nav{
   height: 65px !important;
+}
+.testimonal {
+  font-size: 1.2em;
 }
 .name{
   margin-top: 15px;
@@ -620,6 +631,10 @@ font-size: 1.3em;
 .right{
   margin-right: 100px !important;
 }
+.pics-caption{
+  font-size: 2em;
+   -webkit-text-stroke-width: 1px;
+}
 }
 @media only screen and (min-width: 980px) and (max-width: 1299px) {
 
@@ -632,7 +647,9 @@ letter-spacing: 4px;
   font-size: 1.2em;
   margin-top: 10px;
 }
-
+.testimonal {
+  font-size: 1.4em;
+}
 nav{
   height: 65px !important;
 }
@@ -705,6 +722,10 @@ font-size: 1.4em;
 .email{
   margin-left: 100px;
 }
+.pics-caption{
+  font-size: 2.2em;
+   -webkit-text-stroke-width: 1px;
+}
 .links{
   margin-right: 100px;
 }
@@ -745,6 +766,13 @@ letter-spacing: 4px;
   margin: 0 50px 0 20%;
   -webkit-shape-outside: ellipse();
   shape-outside: ellipse(200px 200px at 66% 54%);
+}
+.testimonal {
+  font-size: 1.5em;
+}
+.pics-caption{
+  font-size: 2.5em;
+   -webkit-text-stroke-width: 1px;
 }
 .about-me-text{
     font-size: 1.5em;
@@ -788,6 +816,11 @@ width: 100%
 }
 #about-link{
   margin-top: 16px;
+}
+.pics-caption{
+  font-size: 2.5em;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 .about,.frameworks{
   text-align: center;
