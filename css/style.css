@@ -8,6 +8,17 @@ nav{
   z-index: 999;
   top: 0;
 }
+.slider,.img{
+  margin-top: 50px;
+}
+.slider .slides li{
+  opacity: 1;
+  height: 640px;
+}
+.indicator-item{
+  margin-top: 55% !important;
+  z-index: 99;
+}
 .name{
   margin: 0;
   margin-top: 6px;

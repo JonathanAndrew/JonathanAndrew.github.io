@@ -1,0 +1,835 @@
+body{
+  background-color: #f5f5f5;
+}
+nav{
+  height: 40px !important;
+  line-height: 2 !important;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.name{
+  margin: 0;
+  margin-top: 6px;
+  font-size: .85em;
+}
+.boat-container{
+  min-height: 200px !important;
+}
+.bridge-container{
+  min-height: 190px !important;
+}
+.bridge{
+  position: absolute;
+  top: 10%;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.tech-frame-lang{
+  float: none !important;
+  margin: 0 auto !important;
+}
+.section{
+  padding-top: 0 !important;
+}
+.white{
+  background-color: #f5f5f5;
+}
+
+.seattle{
+  min-width: 310px !important;
+  margin-top: -20px;
+  padding: 0;
+}
+
+.download-png{
+  width: 40px;
+  margin-top: 10px;
+}
+.resume{
+  margin-bottom: 10px;
+}
+nav ul li{
+  display: inline;
+}
+
+nav ul a{
+  color: #444;
+  font-size: 1.2em;
+  font-family: 'Cabin', sans-serif; 
+}
+
+.about-link{
+  margin-top: 10px;
+}
+nav .brand-logo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin:8px 0 0 25px;
+  font-weight: bold;
+  color: #000 !important;
+}
+nav .brand-logo:hover{
+  text-decoration: underline;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 0px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 98%;
+}
+.header{
+  text-align: center;
+}
+.type p{
+  text-indent: 10px;
+  color: #fff; 
+  text-shadow: 1px 1px #000;
+  text-align: center;
+  font-family: "Courier";
+  font-size: 9px;
+  font-weight: bold;
+  margin: 0px auto;
+  margin-top: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  animation: type 3.5s steps(60, end); 
+}
+
+.type p:nth-child(2){
+  animation: type2 7s steps(60, end);
+  margin: 0px auto;
+}
+.projects{
+  margin: 15px 0 15px 0;
+}
+.boat{
+  margin-bottom: 10%;
+}
+
+.git, .email{
+  color: #000;
+}
+
+.hide{
+  display: none;
+}
+
+.pics-caption{
+  font-weight: bold;
+  font-size: 1em;
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
+}
+
+.type span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+.java-expresso{
+  width: 400px;
+}
+
+.leaf{
+  width: 300px;
+}
+
+.contigo,.java-expresso,.beervana{
+  width: 250px;
+}
+.content{
+  height: 150px;
+  overflow: auto;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  text-align: left;
+  text-indent: 25px;
+  width: 90%;
+  font-size: 1.2em;
+  margin: 0 auto;
+  font-family: 'Cabin', sans-serif; 
+}
+.icon-block{
+  text-align: center;
+}
+.icon-block h5{
+  text-decoration: underline
+}
+.icon{
+  width: 100px;
+}
+.about-intro{
+  width: 100%;
+}
+.about-me-intro{
+  margin: -20px 0 0 0;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  padding: 2% 5%;
+  width: 100%;
+  font-family: 'Cabin', sans-serif;
+}
+.about-me-text{
+  font-size: 1.2em;
+  line-height: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.me{
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-shape-outside:none;
+  shape-outside: none;
+}
+.me-description{
+  text-align: center;
+}
+.info{
+  text-align: center;
+}
+.info h5{
+  float: left;
+  margin-top: 10px;
+}
+.info a{
+  margin-top: 10px;
+}
+
+#about{
+  margin-top: 100px;
+  width: 100%;
+  margin: 100px auto;
+}
+.about{
+  text-decoration: underline;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+.contact-info{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.email{
+  float: left;
+}
+.email-text{
+  font-size: .65em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.8em;
+  text-decoration: underline;
+  color: #000;
+  font-family: 'Cabin', sans-serif; 
+}
+.material-icons{
+  margin-left: 15px !important;
+}
+a:hover{
+  text-decoration: underline;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .45em;
+}
+.links h5{
+  float: left;
+  margin-right: 15px
+}
+.links{
+  float: right
+}
+.links img{
+  margin-top:10px;
+}
+.links-text{
+  display: none;
+  font-size: .45em;
+}
+.linkedin-img{
+  margin-left: 10px;
+}
+.dan{
+  margin:10px 10px 0 0;
+  float: right;
+}
+.dan-image{
+  width: 50px;
+  margin-right: 10px;
+}
+.testimonal{
+  padding: 2%;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1em;
+}
+.side-nav a {
+  height: 1px !important;
+}
+
+footer{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+}
+footer.page-footer{
+  padding-top: 0 !important;
+}
+@media only screen and (min-width : 271px) and (max-width: 350px) {
+.seattle{
+  min-width: 270px !important;
+  margin-top: -20px;
+}
+nav{
+  height: 55px !important;
+}
+nav ul a{
+  font-size: 1.5em;
+}
+nav .brand-logo{
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+.type p{
+  font-size: 12px;
+  margin-top: 150px;
+  width: 90%;
+  animation: type 3.5s steps(60, end); 
+}
+.pics-caption{
+  font-size: 1.2em;
+   -webkit-text-stroke-width: .5px;
+}
+.java-expresso{
+  width: 250px;
+}
+
+.leaf{
+  width: 250px;
+}
+
+.contigo,.java-expresso,.beervana{
+  width: 250px;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  font-size: 1em;
+}
+.about-me-intro{
+  margin: -20px 0 0 0;
+  font-size: 1em;
+  padding: 2% 5%;
+}
+.about-me-text{
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 1.5rem;
+}
+.me{
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-shape-outside:none;
+  shape-outside: none;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2em;
+}
+.email-text{
+  font-size: .55em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.5em;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .5em;
+}
+.testimonal{
+  padding: 2%;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto;
+}
+.links-text{
+  font-size: .55em;
+}
+}
+@media only screen and (min-width : 351px) and (max-width: 549px) {
+.seattle{
+  min-width: 310px !important;
+  margin-top: -45px;
+}
+nav{
+  height: 50px !important;
+}
+nav ul a{
+  font-size: 1.8em;
+}
+nav .brand-logo{
+  font-size: 1.75em;
+  letter-spacing: 2px;
+}
+.type p{
+  font-size: 13.5px;
+  margin-top: 200px;
+  width: 100%;
+  animation: type 3.5s steps(60, end); 
+}
+.pics-caption{
+  font-size: 1.2em;
+  -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
+}
+.java-expresso{
+  width: 400px;
+}
+
+.leaf{
+  width: 300px;
+}
+
+.contigo,.java-expresso,.beervana{
+  width: 350px;
+}
+.contigo-text,.java-expresso-text,.beervana-text{
+  font-size: 1.2em;
+}
+.about-me-intro{
+  margin: -25px 0 0 0;
+  font-size: 1em;
+  padding: 2% 5%;
+  width: 100%;
+}
+.about-me-text{
+  font-size: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left !important;
+  line-height: 1.5rem;
+}
+.me{
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-shape-outside:none;
+  shape-outside: none;
+
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.email-text{
+  font-size: .65em;
+  margin-left: 15px;
+}
+.menu{
+  font-size: 1.8em;
+}
+a{
+   color: #0059b3 !important;
+   font-size: .6em;
+}
+.links-text{
+  font-size: .65em;
+}
+.testimonal{
+  padding: 2%;
+  font-size: 1.1em;
+  width: 90%;
+  margin: 0 auto;
+}
+#about-link{
+  margin-top: 16px;
+}
+.home{
+  margin-top: 25.5px;
+}
+}
+@media only screen and (min-width : 550px) and (max-width: 767px) {
+nav{
+  height: 65px !important;
+}
+.pics-caption{
+  font-size: 1.5em;
+   -webkit-text-stroke-width: 1px;
+}
+.name{
+  margin-top: 15px;
+}
+.seattle{
+  min-height: 242px;
+  margin-top: 5px;
+}
+.boat-container{
+  min-height: 209px !important;
+}
+.bridge-container{
+  min-height: 198px !important;
+  margin-bottom: 15px;
+}
+nav .brand-logo{
+  font-size: 2.4em;
+  letter-spacing: 4px;
+  margin: -3px 0 0 15px;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.type p{
+  font-size: 1.5em;
+}
+a{
+  font-size: .8em;
+}
+.email-text,.links-text{
+  font-size: 1em;
+}
+.about-me-intro{
+font-size: 1.2em;
+}
+.testimonal{
+  padding: 2%;
+  width:90%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+#about-link{
+  margin-top: 16px;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.home{
+  margin-top: 25.5px;
+}
+}
+@media only screen and (min-width : 768px) and (max-width: 979px) {
+nav .brand-logo{
+margin: 0px;
+font-weight: bold;
+font-size: 2.5em;
+letter-spacing: 4px;
+}
+nav{
+  height: 65px !important;
+}
+.testimonal {
+  font-size: 1.2em;
+}
+.name{
+  margin-top: 15px;
+}
+.seattle{
+  min-height: 339px !important;
+  margin-top: -15px;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 58% 54%);
+}
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+.boat-container{
+  min-height: 291px;
+}
+.bridge-container{
+  min-height: 276px !important;
+  margin-bottom: 25px;
+}
+#index-banner .section {
+    top: 10%;
+  }
+.type p{
+  font-size: 1.8em;
+  margin-top: 200px;
+  width: 700px !important;
+}
+.contigo,.java-expresso{
+  width: 300px;
+  min-width: 250px;
+}
+a{
+  font-size: .9em;
+}
+.email-text,.links-text{
+  font-size: 1em;
+}
+.email{
+  margin-left: 100px;
+}
+.links{
+  margin-right: 100px;
+}
+.about-me-intro{
+font-size: 1.3em;
+}
+#about-link{
+  margin-top: 16px;
+}
+.home{
+  margin-top: 25.5px;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.right{
+  margin-right: 100px !important;
+}
+.pics-caption{
+  font-size: 2em;
+   -webkit-text-stroke-width: 1px;
+}
+}
+@media only screen and (min-width: 980px) and (max-width: 1299px) {
+
+nav .brand-logo{
+margin: 1.5px 0 0 75px;
+font-size: 2.4em;
+letter-spacing: 4px;
+}
+.name{
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.testimonal {
+  font-size: 1.4em;
+}
+nav{
+  height: 65px !important;
+}
+
+.type p{
+  font-size: 1.5em;
+  margin-top: 200px;
+}
+
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.seattle{
+  min-height: 396px;
+  margin-top: -5px;
+}
+
+.boat-container{
+  min-height: 372px !important;
+}
+
+.bridge-container{
+  min-height: 352px !important;
+}
+
+a{
+  font-size: 1em;
+}
+
+.email-text,.links-text{
+  font-size: 1em;
+}
+
+.about-me-intro{
+font-size: 1.4em;
+}
+
+#about-link{
+  margin-top: 16px;
+}
+
+.home{
+  margin-top: 25.5px;
+}
+
+.right{
+  margin-right: 100px !important;
+}
+
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 60% 54%);
+}
+
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.email{
+  margin-left: 100px;
+}
+.pics-caption{
+  font-size: 2.2em;
+   -webkit-text-stroke-width: 1px;
+}
+.links{
+  margin-right: 100px;
+}
+}
+@media only screen and (min-width : 1300px) {
+.seattle{
+  padding-top: 200px;
+  min-height: 572px;
+  margin-top: -55px;
+}
+.name{
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+nav{
+  height: 65px !important;
+}
+.container{
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.boat-container{
+  min-height: 494px !important;
+}
+.bridge-container{
+  min-height: 468px !important;
+}
+#index-banner .section {
+  top: 0;
+}
+nav .brand-logo{
+font-size: 2.5em;
+margin: -3px 0 0 100px;
+letter-spacing: 4px;
+}
+.me{
+  float: left;
+  margin: 0 50px 0 20%;
+  -webkit-shape-outside: ellipse();
+  shape-outside: ellipse(200px 200px at 66% 54%);
+}
+.testimonal {
+  font-size: 1.5em;
+}
+.pics-caption{
+  font-size: 2.5em;
+   -webkit-text-stroke-width: 1px;
+}
+.about-me-text{
+    font-size: 1.5em;
+    line-height: 3.5rem;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.type p{
+  font-size: 2.1em;
+  width: 800px !important;
+  animation: type 2.5s steps(60, end); 
+}
+.type p:nth-child(2){
+  animation: type2 5.5s steps(60, end);
+}
+.contigo,.java-expresso,.beervana{
+  width: 400px;
+}
+a{
+  font-size: 1.2em;
+}
+.email{
+  margin-left: 100px;
+}
+.links{
+  margin-right: 100px;
+}
+.email-text,.links-text{
+  font-size: 1.2em;
+}
+.about-me-intro{
+font-size: 1.5em;
+width: 100%
+}
+#about-link{
+  margin-top: 16px;
+}
+.pics-caption{
+  font-size: 2.5em;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+.about,.frameworks{
+  text-align: center;
+  font-size: 2.2em;
+}
+.home{
+  margin-top: 25.5px;
+}
+.right{
+  margin-right: 200px !important;
+}
+}
