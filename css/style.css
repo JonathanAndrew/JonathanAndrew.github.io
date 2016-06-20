@@ -8,6 +8,9 @@ nav{
   z-index: 999;
   top: 0;
 }
+.white{
+  background-color: rgba(255,255,255,.95) !important;
+}
 .slider,.img{
   margin-top: 50px;
 }
