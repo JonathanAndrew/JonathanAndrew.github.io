@@ -2813,7 +2813,7 @@ video.responsive-video {
   display: none;
   position: absolute;
   left: 50%;
-  bottom: -20%;
+  bottom: -23%;
   width: 100%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
