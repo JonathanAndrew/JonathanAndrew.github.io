@@ -57,7 +57,9 @@ nav{
   margin-top: -20px;
   padding: 0;
 }
-
+.references-arrow{
+  font-size: 3em;
+}
 .download-png{
   width: 40px;
   margin-top: 10px;
