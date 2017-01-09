@@ -114,7 +114,7 @@ p {
 .type p{
   text-indent: 10px;
   color: #fff; 
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 2px #000;
   text-align: center;
   font-family: "Courier";
   font-size: 9px;
@@ -806,10 +806,10 @@ letter-spacing: 4px;
 .type p{
   font-size: 2.1em;
   width: 800px !important;
-  animation: type 2.5s steps(60, end); 
+  animation: type 2s steps(60, end); 
 }
 .type p:nth-child(2){
-  animation: type2 5.5s steps(60, end);
+  animation: type2 4s steps(60, end);
 }
 .contigo,.java-expresso,.beervana{
   width: 400px;
@@ -828,7 +828,8 @@ a{
 }
 .about-me-intro{
 font-size: 1.5em;
-width: 100%
+width: 100%;
+text-shadow: 1px 2px #000;
 }
 #about-link{
   margin-top: 16px;
