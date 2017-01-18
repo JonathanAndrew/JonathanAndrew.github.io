@@ -1,2 +1,0 @@
-# JonathanAndrew.github.io
-## Portfolio
