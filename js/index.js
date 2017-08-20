@@ -24,6 +24,17 @@ name();
 		var content = $(this).children().find('.app-content');
 		TweenMax.to(content,1,{top:200,paddingTop:0,paddingLeft:5,paddingRight:5,opacity:0, ease: Power2.easeOut });
 	});
+	var apps = $('#app-field');
+	var swipe = TweenMax.to(apps,4,{left:0,ease: Expo.easeOut});
+	var controller = new ScrollMagic.Controller();
+		var scene = new ScrollMagic.Scene({
+				triggerElement: ".section",
+				triggerHook: 'onEnter',
+				triggerHook:(1),
+				duration:800
+			})
+			.setTween(swipe)
+		  .addTo(controller);
 	// $('.slider').slider({full_width: true});
 	// $('.slider').slider('pause');
 	// // Start slider
