@@ -2,6 +2,13 @@ $(document).ready(function(){
 	$('.brand-logo').click(function(){
 		window.location.replace("")
 	});
+	$('.beervana,.contigo,.java-expresso').hover(function(){
+		var content = $(this).children().find('.app-content');
+		TweenMax.to(content,.8,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,opacity:1,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
+	},function(){
+		var content = $(this).children().find('.app-content');
+		TweenMax.to(content,1,{top:200,paddingTop:0,paddingLeft:5,paddingRight:5,opacity:0, ease: Power2.easeOut });
+	});
 	// $('.slider').slider({full_width: true});
 	// $('.slider').slider('pause');
 	// // Start slider
@@ -19,7 +26,7 @@ $(document).ready(function(){
 	 	$("#about").removeClass('hide');
 	 	$("#portfolio-link").removeClass('hide');
  	});
- 	 
+
  	$('.about-link').click(function(event){
 	 	event.preventDefault();
 	 	window.scrollTo(0,0);

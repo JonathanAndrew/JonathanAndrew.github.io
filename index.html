@@ -50,76 +50,39 @@
       <div class="center about-me-intro teal">I'm here to help your company grow. I have the expertise to assist in delivering your goals, whether it be updating your website, implementing a strategic marketing plan, or developing your unique brand. I can capture the story and value of a company and turn them into everlasting experiences for their users.</div>
     <h3 class="center projects">Projects</h3>
       <!--   Icon Section   -->
-      <div class="row">
-         <div class="col s12 m12 l4">
-          <div class="icon-block">
-            <h5>Beervana</h5>
-            <a href="http://drinkbeervana.herokuapp.com"  target="_blank"><img class="beervana" alt="beervana app image" src="./images/beervana.png"/></a>
-            <p class="beervana-text content">Beervana, the heaven for beers. Beervana is an app made brewers for brewers. Learn how to make your own specialty blend and keep track of the different beers you have drank. Beervana is the one stop shop for everything beer</p>
-            <div>
-              <h5>Technolgies Used:</h5>
-              <ul>
-                <li>HTML5/CSS3</li>
-                <li>Javascript</li>
-                <li>Bootstrap</li>
-                <li>Node.js</li>
-                <li>jQuery</li>
-                <li>Express</li>
-                <li>Angular</li>
-                <li>MongoDB</li>
-                <li>BreweryDB</li>
-              </ul>
-            </div>
+    <ul id="app-field">
+      <li class="col s12 m12 l4 app-container beervana">
+         <a href="http://drinkbeervana.herokuapp.com"  target="_blank">
+          <div class="app-content">
+            <p class="beervana-text content">Beervana, the heaven for beers. </p>
+            <h5>Technolgies Used:</h5>
+            <p>HTML5/CSS3, Javascript, Bootstrap, Node.js, jQuery, Express, Angular, MongoDB, BreweryDB</p>
           </div>
-        </div>
-         <div class="col s12 m12 l4">
-          <div class="icon-block">
-            <h5>Java-Expresso</h5>
-            <a href="https://java-expresso.herokuapp.com"  target="_blank"><img alt="java-expresso app image" class="java-expresso" src="./images/java-expresso.jpg"/></a>
-            <p class="java-expresso-text content">Java-expresso brings the convience of finding boutique coffee shops right to your finger tips. In the need for quick cup of joe or want a place to relax and work? Let Java-expresso find the right place for you. With Java-exresso the perfect coffee shop is only a click away.</p>
-            <div>
+        </a>
+      </li>
+       <li class="col s12 m12 l4 app-container java-expresso">
+           <a href="https://java-expresso.herokuapp.com"  target="_blank">
+            <div class="app-content">
+                <p class="java-expresso-text content">Java-expresso, Find local boutique coffee shops</p>
               <h5>Technolgies Used:</h5>
-              <ul>
-                <li>HTML5/CSS3</li>
-                <li>Javascript</li>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Yelp API</li>
-                <li>Geolocation</li>
-                <li>Google Maps API</li>
-              </ul>
+              <p>
+                HTML5/CSS3, Javascript, Bootstrap, jQuery, Node.js, Express, Yelp API, Geolocation, Google Maps API,
+              </p>
             </div>
-          </div>
+          </a>
+      </li>
+      <li class="col s12 m12 l4 app-container contigo">
+        <a href="http://contigo.herokuapp.com" target="_blank">
+          <div class="app-content">
+            <p class="contigo-text content">ConTigo, ride share with friends</p>
+            <h5>Technolgies Used:</h5>
+            <p>
+              Google Maps API, Ruby on Rails, Facebook API, HTML5/CSS3, Javascript, Boostrap, jQuery, MailGun, Logo Pop, OmniAuth, PostgreSQL, ActiveMailer, Lyft and Uber API
+            </p>
         </div>
-        <div class="col s12 m12 l4">
-          <div class="icon-block">
-            <h5>Contigo</h5>
-            <a href="http://contigo.herokuapp.com" target="_blank"><img class="contigo" alt="contigo app image" src="./images/contigo.jpg" /></a>
-            <p class="contigo-text content">ConTigo was born from the powerful combination of an empty wallet and love of convenience, and is the brain child and full stack Rails application built by Jonathan Stevenson, Navya Lakkaraju, Derek Nuzum, and Cassandra Aguiar. We named our product after the spanish word 'with me' which we think perfectly embodies our principles: community and openness. Join us! Save money, make connections, get where you need to go. What could be better?</p>
-            <div>
-              <h5>Technolgies Used:</h5>
-                <ul>
-                  <li>Google Maps API</li>
-                  <li>Ruby on Rails</li>
-                  <li>Facebook API</li>
-                  <li>HTML5/CSS3</li>
-                  <li>Javascript</li>
-                  <li>Boostrap</li>
-                  <li>jQuery</li>
-                  <li>MailGun</li>
-                  <li>Logo Pop</li>
-                  <li>OmniAuth</li>
-                  <li>PostgreSQL</li>
-                  <li>ActiveMailer</li>
-                  <li>Lyft and Uber API</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+       </a>
+      </li>
+    </ul>
   </div>
   <div class="boat-container parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -251,6 +214,10 @@
 </footer>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script type="text/javascript" src="./js/index.js"></script>

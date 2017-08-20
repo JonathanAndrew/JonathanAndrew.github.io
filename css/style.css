@@ -8,6 +8,12 @@ nav{
   z-index: 999;
   top: 0;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
 .white{
   background-color: rgba(255,255,255,.95) !important;
 }
@@ -26,6 +32,44 @@ nav{
   margin: 0;
   margin-top: 15px;
   font-size: .85em;
+}
+#app-field{
+  list-style-type: none;
+  text-align: center;
+}
+#app-field li {
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+.beervana{
+  background-image: url('../images/beervana.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.contigo{
+  background-image: url('../images/contigo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.java-expresso{
+  background-image: url('../images/java-expresso.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.app-content{
+  position: relative;
+  top: 200px;
+  opacity: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.app-container{
+  width: 400px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  padding:5px 5px;
 }
 .boat-container{
   min-height: 200px !important;
@@ -74,7 +118,7 @@ nav ul li{
 nav ul a{
   color: #444;
   font-size: 1.2em;
-  font-family: 'Cabin', sans-serif; 
+  font-family: 'Cabin', sans-serif;
 }
 
 .about-link{
@@ -113,7 +157,7 @@ p {
 }
 .type p{
   text-indent: 10px;
-  color: #fff; 
+  color: #fff;
   text-shadow: 1px 2px #000;
   text-align: center;
   font-family: "Courier";
@@ -124,7 +168,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   width: 90%;
-  animation: type 3.5s steps(60, end); 
+  animation: type 3.5s steps(60, end);
 }
 
 .type p:nth-child(2){
@@ -157,43 +201,29 @@ p {
   animation: blink 1s infinite;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-} 
+@keyframes type{
+  from { width: 0; }
+}
 
 @keyframes type2{
   0%{width: 0;}
   50%{width: 0;}
-  100%{ width: 100; } 
-} 
+  100%{ width: 100; }
+}
 
 
 @keyframes blink{
   to{opacity: .0;}
 }
-
-.java-expresso{
-  width: 400px;
-}
-
 .leaf{
   width: 300px;
 }
-
-.contigo,.java-expresso,.beervana{
-  width: 250px;
-}
-.content{
-  height: 150px;
-  overflow: auto;
-}
 .contigo-text,.java-expresso-text,.beervana-text{
-  text-align: left;
-  text-indent: 25px;
+  z-index: -99;
   width: 90%;
   font-size: 1.2em;
   margin: 0 auto;
-  font-family: 'Cabin', sans-serif; 
+  font-family: 'Cabin', sans-serif;
 }
 .icon-block{
   text-align: center;
@@ -273,7 +303,7 @@ p {
   font-size: 1.8em;
   text-decoration: underline;
   color: #000;
-  font-family: 'Cabin', sans-serif; 
+  font-family: 'Cabin', sans-serif;
 }
 .material-icons{
   margin-left: 15px !important;
@@ -348,7 +378,7 @@ nav .brand-logo{
   font-size: 12px;
   margin-top: 150px;
   width: 90%;
-  animation: type 3.5s steps(60, end); 
+  animation: type 3.5s steps(60, end);
 }
 .pics-caption{
   font-size: 1.2em;
@@ -357,12 +387,7 @@ nav .brand-logo{
 .java-expresso{
   width: 250px;
 }
-
 .leaf{
-  width: 250px;
-}
-
-.contigo,.java-expresso,.beervana{
   width: 250px;
 }
 .contigo-text,.java-expresso-text,.beervana-text{
@@ -430,7 +455,7 @@ nav .brand-logo{
   font-size: 13.5px;
   margin-top: 200px;
   width: 100%;
-  animation: type 3.5s steps(60, end); 
+  animation: type 3.5s steps(60, end);
 }
 .pics-caption{
   font-size: 1.2em;
@@ -806,16 +831,24 @@ letter-spacing: 4px;
 .type p{
   font-size: 2.1em;
   width: 800px !important;
-  animation: type 2s steps(60, end); 
+  animation: type 2s steps(60, end);
 }
 .type p:nth-child(2){
   animation: type2 4s steps(60, end);
 }
 .contigo,.java-expresso,.beervana{
-  width: 400px;
+  width: 500px;
+  margin:0 15px;
+  height: 295px;
+  background-color: #000;
+  margin: 0 15px;
 }
 a{
   font-size: 1.2em;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
 }
 .email{
   margin-left: 100px;
