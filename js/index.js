@@ -1,7 +1,22 @@
 $(document).ready(function(){
+	var body = $('body');
+	TweenMax.to(body,3,{opacity:1, ease: Power2.easeIn });
+	var windowHeight = $(window).height();
+function name(){
+	var name = $('#name');
+	TweenMax.to(name,3,{opacity:1, ease: Power2.easeIn });
+};
+name();
 	$('.brand-logo').click(function(){
 		window.location.replace("")
 	});
+	$(window).on('resize', function(){
+		var windowHeight = $(window).height();
+    $('.seattle').css('height',windowHeight);
+	});
+
+	$('.seattle').css('height',windowHeight);
+	console.log($(window).height());
 	$('.beervana,.contigo,.java-expresso').hover(function(){
 		var content = $(this).children().find('.app-content');
 		TweenMax.to(content,.8,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,opacity:1,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });

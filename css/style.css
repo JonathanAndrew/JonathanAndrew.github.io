@@ -1,5 +1,9 @@
 body{
   background-color: #f5f5f5;
+  opacity: 0;
+}
+.black{
+  background-color: rgba(0,0,0,.001) !important;
 }
 nav{
   height: 40px !important;
@@ -7,6 +11,7 @@ nav{
   position: fixed;
   z-index: 999;
   top: 0;
+  box-shadow: none;
 }
 a{
   text-decoration: none;
@@ -29,9 +34,19 @@ a:hover{
   z-index: 99;
 }
 .name{
-  margin: 0;
-  margin-top: 15px;
-  font-size: .85em;
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  color: #fff;
+  z-index: 99;
+  width: 1000px;
+  text-align: center;
+}
+#name{
+  font-family: 'Great Vibes', cursive;
+  font-size: 7em;
+  font-weight: bold;
+  opacity: 1;
 }
 #app-field{
   list-style-type: none;
@@ -97,9 +112,9 @@ a:hover{
 }
 
 .seattle{
-  min-width: 310px !important;
-  margin-top: -20px;
-  padding: 0;
+  background-image: url('../images/seattle2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .references-arrow{
   font-size: 3em;
@@ -360,10 +375,7 @@ footer.page-footer{
   padding-top: 0 !important;
 }
 @media only screen and (min-width : 281px) and (max-width: 361px) {
-.seattle{
-  min-width: 270px !important;
-  margin-top: -20px;
-}
+
 nav{
   height: 55px !important;
 }
@@ -437,10 +449,7 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
-.seattle{
-  min-width: 310px !important;
-  margin-top: -45px;
-}
+
 nav{
   height: 50px !important;
 }
@@ -536,13 +545,6 @@ nav{
   font-size: 1.5em;
    -webkit-text-stroke-width: 1px;
 }
-.name{
-  margin-top: 15px;
-}
-.seattle{
-  min-height: 242px;
-  margin-top: 5px;
-}
 .boat-container{
   min-height: 209px !important;
 }
@@ -600,13 +602,6 @@ nav{
 }
 .testimonal {
   font-size: 1.2em;
-}
-.name{
-  margin-top: 15px;
-}
-.seattle{
-  min-height: 339px !important;
-  margin-top: -15px;
 }
 .container{
   max-width: 100% !important;
@@ -684,10 +679,6 @@ margin: 1.5px 0 0 75px;
 font-size: 2.4em;
 letter-spacing: 4px;
 }
-.name{
-  font-size: 1.2em;
-  margin-top: 10px;
-}
 .testimonal {
   font-size: 1.4em;
 }
@@ -703,11 +694,6 @@ nav{
 .container{
   max-width: 100% !important;
   width: 100% !important;
-}
-
-.seattle{
-  min-height: 396px;
-  margin-top: -5px;
 }
 
 .boat-container{
@@ -772,15 +758,6 @@ font-size: 1.4em;
 }
 }
 @media only screen and (min-width : 1300px) {
-.seattle{
-  padding-top: 200px;
-  min-height: 572px;
-  margin-top: -55px;
-}
-.name{
-  font-size: 1.2em;
-  margin-top: 10px;
-}
 nav{
   height: 65px !important;
 }
