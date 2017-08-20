@@ -1,6 +1,7 @@
 $(document).ready(function(){
+	window.onbeforeunload = function(){ window.scrollTo(0,0); }
 	var body = $('body');
-	TweenMax.to(body,3,{opacity:1, ease: Power2.easeIn });
+	TweenMax.to(body,0,{opacity:1, ease: Power2.easeIn });
 	var windowHeight = $(window).height();
 function name(){
 	var name = $('#name');
@@ -19,22 +20,39 @@ name();
 	console.log($(window).height());
 	$('.beervana,.contigo,.java-expresso').hover(function(){
 		var content = $(this).children().find('.app-content');
-		TweenMax.to(content,.8,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,opacity:1,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
+		TweenMax.to(content,1,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
 	},function(){
 		var content = $(this).children().find('.app-content');
-		TweenMax.to(content,1,{top:200,paddingTop:0,paddingLeft:5,paddingRight:5,opacity:0, ease: Power2.easeOut });
+		TweenMax.to(content,1,{top:500,paddingTop:0,paddingLeft:5,paddingRight:5, ease: Power2.easeOut });
 	});
 	var apps = $('#app-field');
-	var swipe = TweenMax.to(apps,4,{left:0,ease: Expo.easeOut});
-	var controller = new ScrollMagic.Controller();
+	var projects = $('.projects');
+	var controller = new ScrollMagic.Controller({addIndicators: true});
+	var swipe = TweenMax.to(apps,3,{top:0,opacity:1, ease: Power0.easeNone })
+	var project = TweenMax.to(projects,3,{opacity:1,ease: Expo.easeOut})
+
 		var scene = new ScrollMagic.Scene({
 				triggerElement: ".section",
 				triggerHook: 'onEnter',
-				triggerHook:(1),
-				duration:800
+				triggerHook:(.85),
+				duration:300
 			})
 			.setTween(swipe)
-		  .addTo(controller);
+		  .addIndicators()
+
+			var scene2 = new ScrollMagic.Scene({
+			triggerElement: ".section",
+			duration: 300,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(project)
+			.addIndicators()
+			controller.addScene([
+				scene,
+				scene2
+			]);
+
 	// $('.slider').slider({full_width: true});
 	// $('.slider').slider('pause');
 	// // Start slider
