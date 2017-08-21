@@ -27,30 +27,65 @@ name();
 	});
 	var apps = $('#app-field');
 	var projects = $('.projects');
+	var testimonal = $('.testimonal');
+	var arrow = $('#arrow');
+	var dan = $('.dan');
 	var controller = new ScrollMagic.Controller({addIndicators: true});
-	var swipe = TweenMax.to(apps,3,{top:0,opacity:1, ease: Power0.easeNone })
-	var project = TweenMax.to(projects,3,{opacity:1,ease: Expo.easeOut})
-
+	var app = TweenMax.to(apps,1,{opacity:1,top:0, ease: Power0.easeNone,delay: 1 })
+	var project = TweenMax.to(projects,2,{opacity:1,ease: Expo.easeOut,delay:1})
+	var elemit = TweenMax.to(testimonal,2,{opacity:1,ease: Expo.easeOut, delay:2.5})
+	var animateDan = TweenMax.to(dan,10,{marginRight:200,ease: Expo.easeOut,delay:7})
+	var arrow = TweenMax.to(arrow,2,{opacity:1, ease: Expo.easeOut,delay:1})
 		var scene = new ScrollMagic.Scene({
 				triggerElement: ".section",
 				triggerHook: 'onEnter',
 				triggerHook:(.85),
-				duration:300
+				duration:400
 			})
-			.setTween(swipe)
+			.setTween(app)
 		  .addIndicators()
 
 			var scene2 = new ScrollMagic.Scene({
 			triggerElement: ".section",
-			duration: 300,
+			duration: 200,
 			triggerHook: 'onEnter',
 			triggerHook:(.9),
 			})
 			.setTween(project)
 			.addIndicators()
+
+			var scene3 = new ScrollMagic.Scene({
+			triggerElement: "#elemit-container",
+			duration: 400,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(elemit)
+			.addIndicators()
+			var scene4 = new ScrollMagic.Scene({
+			triggerElement: "#elemit-container",
+			duration: 400,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(arrow)
+			.addIndicators()
+			var scene5 = new ScrollMagic.Scene({
+			triggerElement: "#elemit-container",
+			duration: 650,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(animateDan)
+			.addIndicators()
 			controller.addScene([
 				scene,
-				scene2
+				scene2,
+				scene3,
+				scene4,
+				scene5
+				// scene,
+				// scene2
 			]);
 
 	// $('.slider').slider({full_width: true});
@@ -110,6 +145,12 @@ name();
 	        }, 100);
       	});
  	});
+
+	$('.modal-trigger	').on('click',function(){
+
+		 $('#modal1').modal('open');
+
+	});
  	// $('#photography-link').click(function(event){
 	 // 	event.preventDefault(event);
 	 // 	window.scrollTo(0,0);
@@ -134,5 +175,5 @@ name();
 	 //        }, 100);
   //     	});
  	// });
-
+$('.modal').modal();
 });

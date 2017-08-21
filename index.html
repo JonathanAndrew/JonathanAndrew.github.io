@@ -13,15 +13,19 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 <body>
-  <nav class="black">
+  <nav class="nav">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
-        <li class="about-link"><a id="about-link" href="#">About Me</a></li>
-        <li><a href="https://drive.google.com/file/d/0B1jm__8Iic2qLS1oMDI3Nk0ydUE/view?usp=sharing"><span class="resume">Resume</span></a></li>
-        <li><a id="portfolio-link" class="home hide" href="#">Home</a></li>
+        <!-- Modal Trigger -->
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></li>
+
+    <!-- Modal Structure -->
+        <li><a href="#">About</a></li>
+        <li><a href="#">Home</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li class="menu">Menu</li>
@@ -32,6 +36,16 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+  <section>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <img src="images/resume.png"/>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  </section>
 <section id="home">
   <div class="name"><h1 id="name">Jonathan Andrew Stevenson</h1></div>
   <div id="index-banner" class="seattle"></div>
@@ -74,22 +88,24 @@
     </ul>
   </div>
   <div class="boat-container parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header pics-caption col s12 light">All pictures property of Jonathan Andrew Productions</h5>
-        </div>
-      </div>
-    </div>
     <div class="boat parallax">
-      <img src="./images/background2.jpg" alt="Unsplashed background img 2">
+      <img src="./images/night-seattle.png" alt="Unsplashed background img 2">
     </div>
   </div>
   <div class="container">
     <div class="section">
-      <div class="row">
+      <div id="modal1" class="modal">
+   <div class="modal-content">
+     <h4>Modal Header</h4>
+     <p>A bunch of text</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+      <div id="elemit-container" class="row">
         <div class="col s12 center">
-          <div><i class="mdi-content-send references-arrow brown-text"></i></div>
+          <div id="arrow"><i class="mdi-content-send references-arrow brown-text"></i></div>
           <h3 class="testimonal">
             <div>"My website was dated and not driving the results I wanted. Jonathan reviewed my website and provided detailed recommendations around overall design, user expereince, content, and how to show up higher in search results. Now we have a plan, and I will be working with Jonathan to apply his recommendations."
             </h3><br>
@@ -203,6 +219,7 @@
 </footer>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>

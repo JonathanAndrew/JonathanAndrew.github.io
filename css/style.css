@@ -2,8 +2,9 @@ body{
   background-color: #f5f5f5;
   opacity: 0;
 }
-.black{
+.nav{
   background-color: rgba(0,0,0,.001) !important;
+  box-shadow: none;
 }
 nav{
   height: 40px !important;
@@ -51,8 +52,10 @@ a:hover{
 #app-field{
   list-style-type: none;
   text-align: center;
-  position: relative;
-  top: 00px;
+  opacity: 0;
+  top:400px;
+}
+#arrow{
   opacity: 0;
 }
 #app-field li {
@@ -75,9 +78,13 @@ a:hover{
   background-repeat: no-repeat;
   background-size: contain;
 }
+#modal1 img{
+  width: 100%;
+  height: auto;
+}
 .app-content{
   position: relative;
-  top: 500px;
+  top: 400px;
   border: 15px solid #f3f3f3;
   border-bottom: none;
   color: #fff;
@@ -354,18 +361,19 @@ a{
   margin-left: 10px;
 }
 .dan{
-  margin:10px 10px 0 0;
+  margin:10px -200px 0 0;
   float: right;
 }
 .dan-image{
-  width: 50px;
-  margin-right: 10px;
+  width: 100px;
+  border-radius: 50%;
 }
 .testimonal{
   padding: 2%;
   width: 90%;
   margin: 0 auto;
   font-size: 1em;
+  opacity: 0;
 }
 .side-nav a {
   height: 1px !important;
