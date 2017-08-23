@@ -18,12 +18,27 @@ name();
 
 	$('.seattle').css('height',windowHeight);
 	console.log($(window).height());
+
+	//Aoo content hvoer
 	$('.beervana,.contigo,.java-expresso').hover(function(){
 		var content = $(this).children().find('.app-content');
 		TweenMax.to(content,1,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
 	},function(){
 		var content = $(this).children().find('.app-content');
 		TweenMax.to(content,1,{top:500,paddingTop:0,paddingLeft:5,paddingRight:5, ease: Power2.easeOut });
+	});
+
+	//link hover
+	$('.link a').hover(function(){
+		var tab = $(this).parent().find('.tab');
+		var link = $(this);
+		TweenMax.to(tab,.2,{top:-40,zIndex:-999, ease: Power2.easeOut})
+		TweenMax.to(link,.2,{zIndex:999,css:{color:"#fff"}, ease: Power2.easeOut})
+	},function(){
+		var tab = $(this).parent().find('.tab');
+		var link = $(this);
+		TweenMax.to(link,1,{zIndex:999,css:{color:"#0059b3"}, ease: Power2.easeOut})
+		TweenMax.to(tab,.1,{top:0, ease: Power2.easeOut})
 	});
 	var apps = $('#app-field');
 	var projects = $('.projects');
@@ -36,7 +51,7 @@ name();
 	var elemit = TweenMax.to(testimonal,2,{opacity:1,ease: Expo.easeOut, delay:2.5})
 	var animateDan = TweenMax.to(dan,10,{marginRight:200,ease: Expo.easeOut,delay:7})
 	var arrow = TweenMax.to(arrow,2,{opacity:1, ease: Expo.easeOut,delay:1})
-		var scene = new ScrollMagic.Scene({
+	var scene = new ScrollMagic.Scene({
 				triggerElement: ".section",
 				triggerHook: 'onEnter',
 				triggerHook:(.85),
