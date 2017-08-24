@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	window.onbeforeunload = function(){ window.scrollTo(0,0); }
 	var body = $('body');
-	TweenMax.to(body,0,{opacity:1, ease: Power2.easeIn });
+	TweenMax.to(body,3,{opacity:1, ease: Power2.easeIn });
 	var windowHeight = $(window).height();
 function name(){
 	var name = $('#name');
@@ -32,12 +32,12 @@ name();
 	$('.link a').hover(function(){
 		var tab = $(this).parent().find('.tab');
 		var link = $(this);
-		TweenMax.to(tab,.2,{top:-40,zIndex:-999, ease: Power2.easeOut})
-		TweenMax.to(link,.2,{zIndex:999,css:{color:"#fff"}, ease: Power2.easeOut})
+		TweenMax.to(tab,.5,{top:-45,zIndex:-999, ease: Power2.easeOut})
+		TweenMax.to(link,.5,{zIndex:999,css:{color:"#002244"}, ease: Power2.easeOut})
 	},function(){
 		var tab = $(this).parent().find('.tab');
 		var link = $(this);
-		TweenMax.to(link,1,{zIndex:999,css:{color:"#0059b3"}, ease: Power2.easeOut})
+		TweenMax.to(link,1,{zIndex:999,css:{color:"#fff"}, ease: Power2.easeOut})
 		TweenMax.to(tab,.1,{top:0, ease: Power2.easeOut})
 	});
 	var apps = $('#app-field');
