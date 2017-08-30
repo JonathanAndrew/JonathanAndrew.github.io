@@ -36,16 +36,19 @@ a:hover{
 }
 .name{
   position: absolute;
-  top: 200px;
-  right: 200px;
-  color: #fff;
-  z-index: 99;
-  width: 1000px;
+  top: 0;
+  width: 100%;
   text-align: center;
+}
+.name h1{
+  margin-top: 50px;
+  color: #fff;
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
 }
 #name{
   font-family: 'Great Vibes', cursive;
-  font-size: 7em;
+  font-size: 6em;
   font-weight: bold;
   opacity: 1;
 }
@@ -78,8 +81,14 @@ a:hover{
   background-repeat: no-repeat;
   background-size: contain;
 }
+.beervana,.contigo,.java-expresso{
+  width: 500px;
+  margin:0 15px;
+  height: 295px;
+  background-color: #000;
+  margin: 0 15px;
+}
 #modal1 img{
-  width: 100%;
   height: auto;
 }
 .app-content{
@@ -124,16 +133,11 @@ a:hover{
 }
 .link span {
   width: 75px;
-  /*background-color: rgba(255,255,255,.8);*/
-  background: red; /* For browsers that do not support gradients */
- background: -webkit-radial-gradient(blue 5%, white 45%, black 25%); /* Safari 5.1-6.0 */
- background: -o-radial-gradient(blue 5%, white 42%, black 25%); /* For Opera 11.6-12.0 */
- background: -moz-radial-gradient(blue 5%, white 42%, black 25%); /* For Firefox 3.6-15 */
- background: radial-gradient(blue 5%, white 42%, black 25%); /* Standard syntax */
+  background-color: #fff;
   height: 100px;
   display: inline-block;
   position: relative;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   border: 1px solid #fff;
 }
 .link .resume{
@@ -141,14 +145,14 @@ a:hover{
 }
 .link {
   overflow: hidden;
-  height: 30px;
+  height: 35px;
   text-align: center;
   margin: 10px 10px;
 }
 .seattle{
   background-image: url('../images/seattle2.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .references-arrow{
   font-size: 3em;
@@ -160,10 +164,13 @@ a:hover{
 .resume{
   margin-bottom: 10px;
 }
-nav ul li{
-  display: inline;
+nav ul{
+  list-style-type: none !important;
 }
-
+nav ul li{
+  margin-right:-200px !important;
+  float: none !important;
+}
 nav ul a{
   color: #444;
   font-size: 1.2em;
@@ -298,9 +305,11 @@ p {
   font-family: 'Cabin', sans-serif;
 }
 .about-me-text{
-  font-size: 1.2em;
-  line-height: 1.5rem;
-  width: 90%;
+  font-size: 1.5em;
+  line-height: 3.5rem;
+  text-align: left;
+  width: 85%;
+  word-break: break-all;
   margin: 0 auto;
 }
 .me{
@@ -362,16 +371,27 @@ a:hover{
   text-decoration: underline;
 }
 .container ul li a{
-   color: #0059b3;
+   color: #fff;
    font-size: 1.5em;
    font-weight: bold;
+   padding:5px 5px;
 }
 .links h5{
   float: left;
   margin-right: 15px
 }
-.links{
-  float: right
+.link{
+float: right;
+clear: both;
+display: inline-block;
+height: 50px;
+text-align: left;
+padding-left: 15px;
+font-weight: bold;
+margin-right: -250px;
+background-color: rgba(0,0,0,.5);
+width: 10%;
+border: 1px solid #fff;
 }
 .links img{
   margin-top:10px;
@@ -402,7 +422,7 @@ a:hover{
   height: 1px !important;
 }
 
-footer{
+.footer{
   width: 100%;
   height: 50px;
   position: fixed;
@@ -411,6 +431,7 @@ footer{
 footer.page-footer{
   padding-top: 0 !important;
 }
+
 @media only screen and (min-width : 281px) and (max-width: 361px) {
 
 nav{
@@ -486,9 +507,35 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
-
+#index-banner{
+  height: 271px !important;
+}
+.container li a{
+  font-size: 1em !important;
+}
+.parallax-container{
+  height: auto !important;
+}
+.link{
+  text-align: center;
+  width: 24%;
+  padding:5px;
+}
+.link a{
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.link:first-child{
+  margin-top: 50px;
+}
 nav{
   height: 50px !important;
+}
+#name{
+  font-size: 2em;
+  padding: 0;
+  margin: 20px;
 }
 nav ul a{
   font-size: 1.8em;
@@ -518,6 +565,7 @@ nav .brand-logo{
 
 .contigo,.java-expresso,.beervana{
   width: 350px;
+  height: 208px;
 }
 .contigo-text,.java-expresso-text,.beervana-text{
   font-size: 1.2em;
@@ -573,10 +621,16 @@ a{
 .home{
   margin-top: 25.5px;
 }
+.seattle{
+  background-size: contain;
+}
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
 nav{
   height: 65px !important;
+}
+#name{
+  font-size: 3.5em;
 }
 .pics-caption{
   font-size: 1.5em;
@@ -626,6 +680,9 @@ font-size: 1.2em;
 .home{
   margin-top: 25.5px;
 }
+.beervana,.contigo,.java-expresso{
+  height:237px;
+}
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
 nav .brand-logo{
@@ -633,6 +690,12 @@ margin: 0px;
 font-weight: bold;
 font-size: 2.5em;
 letter-spacing: 4px;
+}
+.seattle{
+  background-size: cover;
+}
+#name{
+  font-size: 4em;
 }
 nav{
   height: 65px !important;
@@ -649,13 +712,6 @@ nav{
   margin: 0 50px 0 20%;
   -webkit-shape-outside: ellipse();
   shape-outside: ellipse(200px 200px at 58% 54%);
-}
-.about-me-text{
-    font-size: 1.5em;
-    line-height: 3.5rem;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
 }
 .boat-container{
   min-height: 291px;
@@ -708,9 +764,20 @@ font-size: 1.3em;
   font-size: 2em;
    -webkit-text-stroke-width: 1px;
 }
+.app-container{
+  width: 367px;
 }
-@media only screen and (min-width: 980px) and (max-width: 1299px) {
-
+.beervana,.contigo,.java-expresso{
+  height:219px;
+}
+}
+@media only screen and (min-width: 980px) and (max-width: 1289px) {
+#name{
+  font-size: 4.5em;
+}
+.seattle{
+  background-size: cover;
+}
 nav .brand-logo{
 margin: 1.5px 0 0 75px;
 font-size: 2.4em;
@@ -771,14 +838,6 @@ font-size: 1.4em;
   -webkit-shape-outside: ellipse();
   shape-outside: ellipse(200px 200px at 60% 54%);
 }
-
-.about-me-text{
-    font-size: 1.5em;
-    line-height: 3.5rem;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto;
-}
 .about,.frameworks{
   text-align: center;
   font-size: 2.2em;
@@ -793,10 +852,20 @@ font-size: 1.4em;
 .links{
   margin-right: 100px;
 }
+.contigo,.beervana,.java-expresso{
+  height: 240px;
 }
-@media only screen and (min-width : 1300px) {
+
+}
+@media only screen and (min-width : 1290px) {
 nav{
   height: 65px !important;
+}
+.seattle{
+  background-size: cover;
+}
+#name{
+  font-size: 5em;
 }
 .container{
   max-width: 100% !important;
@@ -818,9 +887,9 @@ letter-spacing: 4px;
 }
 .me{
   float: left;
-  margin: 0 50px 0 20%;
+  margin: 0 150px 0 20%;
   -webkit-shape-outside: ellipse();
-  shape-outside: ellipse(200px 200px at 66% 54%);
+  shape-outside: ellipse(144px 200px at 61% 53%);
 }
 .testimonal {
   font-size: 1.5em;
@@ -829,13 +898,7 @@ letter-spacing: 4px;
   font-size: 2.5em;
    -webkit-text-stroke-width: 1px;
 }
-.about-me-text{
-    font-size: 1.5em;
-    line-height: 3.5rem;
-    text-align: left;
-    width: 50%;
-    margin: 0 auto;
-}
+
 .icon-block {
   padding: 0 15px;
 }
@@ -867,9 +930,6 @@ a:hover{
 .email{
   margin-left: 100px;
 }
-.links{
-  margin-right: 100px;
-}
 .email-text,.links-text{
   font-size: 1.2em;
 }
@@ -892,8 +952,5 @@ text-shadow: 1px 2px #000;
 }
 .home{
   margin-top: 25.5px;
-}
-.right{
-  margin-right: 200px !important;
 }
 }
