@@ -433,8 +433,29 @@ footer.page-footer{
   padding-top: 0 !important;
 }
 
-@media only screen and (min-width : 281px) and (max-width: 361px) {
-
+@media only screen and (min-width : 250px) and (max-width: 361px) {
+  #name{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 0;
+    width: 100%;
+      margin: 10px auto;
+  }
+  .parallax-container{
+    height: auto !important;
+  }
+  .projects{
+    font-size: 1.6em;
+  }
+  .link{
+    width: 24%;
+    padding-left: 5px;
+    height: 33px;
+  }
+  .app-container{
+    width:250px;
+    height:149px;
+  }
 nav{
   height: 55px !important;
 }
@@ -508,7 +529,9 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
-
+  .parallax-container{
+    height: auto !important;
+  }
 .container li a{
   font-size: 1em !important;
 }
@@ -630,6 +653,9 @@ a{
 nav{
   height: 65px !important;
 }
+.parallax-container{
+  height: auto !important;
+}
 #name{
   font-size: 3.5em;
 }
@@ -691,6 +717,9 @@ margin: 0px;
 font-weight: bold;
 font-size: 2.5em;
 letter-spacing: 4px;
+}
+.parallax-container{
+  height: auto !important;
 }
 .seattle{
   background-size: cover;
@@ -775,6 +804,9 @@ font-size: 1.3em;
 @media only screen and (min-width: 980px) and (max-width: 1289px) {
 #name{
   font-size: 4.5em;
+}
+.parallax-container{
+  height: auto !important;
 }
 .seattle{
   background-size: cover;
@@ -864,6 +896,9 @@ nav{
 }
 .seattle{
   background-size: cover;
+}
+.parallax-container{
+  height: auto !important;
 }
 #name{
   font-size: 5em;
