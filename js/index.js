@@ -40,7 +40,7 @@ name();
 	var app = TweenMax.to(apps,1,{opacity:1,top:0, ease: Power0.easeNone,delay: 1 })
 	var project = TweenMax.to(projects,2,{opacity:1,ease: Expo.easeOut,delay:1})
 	var elemit = TweenMax.to(testimonal,2,{opacity:1,ease: Expo.easeOut, delay:2.5})
-	var animateDan = TweenMax.to(dan,10,{marginRight:200,ease: Expo.easeOut,delay:7})
+	var animateDan = TweenMax.to(dan,10,{marginRight:100,ease: Expo.easeOut,delay:7})
 	var arrow = TweenMax.to(arrow,2,{opacity:1, ease: Expo.easeOut,delay:1})
 	var link1 = TweenMax.to(links1,2,{marginRight:15,ease: Expo.easeOut})
 	var link2 = TweenMax.to(links2,2,{marginRight:15,ease: Expo.easeOut,delay:1})
