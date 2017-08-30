@@ -434,12 +434,18 @@ footer.page-footer{
 }
 
 @media only screen and (min-width : 250px) and (max-width: 361px) {
+body{
+  overflow-x: hidden;
+}
   #name{
     font-size: 1.8em;
     font-weight: bold;
     padding: 0;
     width: 100%;
       margin: 10px auto;
+  }
+  .app-content{
+
   }
   .parallax-container{
     height: auto !important;
@@ -529,6 +535,9 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
+  body{
+    overflow-x: hidden;
+  }
   .parallax-container{
     height: auto !important;
   }
@@ -650,6 +659,9 @@ a{
 }
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
 nav{
   height: 65px !important;
 }
@@ -712,6 +724,9 @@ font-size: 1.2em;
 }
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
+  body{
+    overflow-x: hidden;
+  }
 nav .brand-logo{
 margin: 0px;
 font-weight: bold;
@@ -802,6 +817,9 @@ font-size: 1.3em;
 }
 }
 @media only screen and (min-width: 980px) and (max-width: 1289px) {
+  body{
+    overflow-x: hidden;
+  }
 #name{
   font-size: 4.5em;
 }
@@ -891,6 +909,9 @@ font-size: 1.4em;
 
 }
 @media only screen and (min-width : 1290px) {
+  body{
+    overflow-x: hidden;
+  }
 nav{
   height: 65px !important;
 }
