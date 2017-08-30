@@ -313,7 +313,7 @@ p {
   line-height: 3.5rem;
   text-align: left;
   width: 85%;
-  word-break: break-all;
+  word-break: break-word;
   margin: 0 auto;
 }
 .me{
@@ -503,6 +503,7 @@ nav .brand-logo{
   width: 90%;
   margin: 0 auto;
   font-size: 1.5em;
+  word-break: break-word;
   line-height: 1.5rem;
 }
 .me{
@@ -540,7 +541,9 @@ a{
   font-size: .55em;
 }
 }
+@media only screen and (min-width:362px) and )
 @media only screen and (min-width : 362px) and (max-width: 549px) {
+   @media screen and (orientation:landscape) { }
   html,body{
     overflow-x: hidden;
   }
@@ -549,6 +552,7 @@ a{
   }
   .about-me-text{
     line-height: 1.5rem;
+    word-break: break-word;
   }
   .parallax-container{
     height: auto !important;
@@ -630,6 +634,7 @@ nav .brand-logo{
   margin: 0 auto;
   text-align: left !important;
   line-height: 1.5rem;
+  word-break: break-word;
 }
 .me{
   width: 200px;
@@ -736,6 +741,7 @@ font-size: 1.2em;
 }
 .about-me-text{
   line-height: 1.5rem;
+  word-break: break-word;
 }
 .about{
   margin: 5px;
