@@ -438,20 +438,17 @@ body{
   overflow-x: hidden;
 }
   #name{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 0;
     width: 100%;
       margin: 10px auto;
   }
-  .app-content{
-
-  }
   .parallax-container{
     height: auto !important;
   }
   .projects{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .link{
     width: 24%;
@@ -567,14 +564,14 @@ nav{
   font-size: 1.8em;
 }
 #name{
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-weight: bold;
   padding: 0;
   width: 100%;
     margin: 10px auto;
 }
 nav ul a{
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 nav .brand-logo{
   font-size: 1.75em;
