@@ -2,6 +2,9 @@ body{
   background-color: #f5f5f5;
   opacity: 0;
 }
+html,body{
+  overflow-x: hidden;
+}
 .nav{
   background-color: rgba(0,0,0,.001) !important;
   box-shadow: none;
@@ -434,11 +437,11 @@ footer.page-footer{
 }
 
 @media only screen and (min-width : 250px) and (max-width: 361px) {
-body{
+html,body{
   overflow-x: hidden;
 }
   #name{
-    font-size: 1.6em;
+    font-size: 1.8em;
     font-weight: bold;
     padding: 0;
     width: 100%;
@@ -532,7 +535,7 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
-  body{
+  html,body{
     overflow-x: hidden;
   }
   .parallax-container{
@@ -656,7 +659,7 @@ a{
 }
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
-  body{
+html,  body{
     overflow-x: hidden;
   }
 nav{
@@ -721,7 +724,7 @@ font-size: 1.2em;
 }
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
-  body{
+html, body{
     overflow-x: hidden;
   }
 nav .brand-logo{
@@ -814,7 +817,7 @@ font-size: 1.3em;
 }
 }
 @media only screen and (min-width: 980px) and (max-width: 1289px) {
-  body{
+  html,body{
     overflow-x: hidden;
   }
 #name{
@@ -906,7 +909,7 @@ font-size: 1.4em;
 
 }
 @media only screen and (min-width : 1290px) {
-  body{
+  html,body{
     overflow-x: hidden;
   }
 nav{
