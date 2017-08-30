@@ -28,29 +28,24 @@ name();
 		TweenMax.to(content,1,{top:500,paddingTop:0,paddingLeft:5,paddingRight:5, ease: Power2.easeOut });
 	});
 
-	//link hover
-	$('.link a').hover(function(){
-		var tab = $(this).parent().find('.tab');
-		var link = $(this);
-		TweenMax.to(tab,.5,{top:-45,zIndex:-999, ease: Power2.easeOut})
-		TweenMax.to(link,.5,{zIndex:999,css:{color:"#002244"}, ease: Power2.easeOut})
-	},function(){
-		var tab = $(this).parent().find('.tab');
-		var link = $(this);
-		TweenMax.to(link,1,{zIndex:999,css:{color:"#fff"}, ease: Power2.easeOut})
-		TweenMax.to(tab,.1,{top:0, ease: Power2.easeOut})
-	});
 	var apps = $('#app-field');
 	var projects = $('.projects');
 	var testimonal = $('.testimonal');
 	var arrow = $('#arrow');
 	var dan = $('.dan');
+	var links1 = $('.link1');
+	var links2 = $('.link2');
+	var links3 = $('.link3');
 	var controller = new ScrollMagic.Controller({addIndicators: true});
 	var app = TweenMax.to(apps,1,{opacity:1,top:0, ease: Power0.easeNone,delay: 1 })
 	var project = TweenMax.to(projects,2,{opacity:1,ease: Expo.easeOut,delay:1})
 	var elemit = TweenMax.to(testimonal,2,{opacity:1,ease: Expo.easeOut, delay:2.5})
 	var animateDan = TweenMax.to(dan,10,{marginRight:200,ease: Expo.easeOut,delay:7})
 	var arrow = TweenMax.to(arrow,2,{opacity:1, ease: Expo.easeOut,delay:1})
+	var link1 = TweenMax.to(links1,2,{marginRight:15,ease: Expo.easeOut,delay:1})
+	var link2 = TweenMax.to(links2,2,{marginRight:15,ease: Expo.easeOut,delay:2})
+	var link3 = TweenMax.to(links3,2,{marginRight:15,ease: Expo.easeOut,delay:3})
+
 	var scene = new ScrollMagic.Scene({
 				triggerElement: ".section",
 				triggerHook: 'onEnter',
@@ -58,7 +53,6 @@ name();
 				duration:400
 			})
 			.setTween(app)
-		  .addIndicators()
 
 			var scene2 = new ScrollMagic.Scene({
 			triggerElement: ".section",
@@ -67,7 +61,6 @@ name();
 			triggerHook:(.9),
 			})
 			.setTween(project)
-			.addIndicators()
 
 			var scene3 = new ScrollMagic.Scene({
 			triggerElement: "#elemit-container",
@@ -76,7 +69,7 @@ name();
 			triggerHook:(.9),
 			})
 			.setTween(elemit)
-			.addIndicators()
+
 			var scene4 = new ScrollMagic.Scene({
 			triggerElement: "#elemit-container",
 			duration: 400,
@@ -84,7 +77,7 @@ name();
 			triggerHook:(.9),
 			})
 			.setTween(arrow)
-			.addIndicators()
+
 			var scene5 = new ScrollMagic.Scene({
 			triggerElement: "#elemit-container",
 			duration: 650,
@@ -92,13 +85,40 @@ name();
 			triggerHook:(.9),
 			})
 			.setTween(animateDan)
-			.addIndicators()
+
+			var scene6 = new ScrollMagic.Scene({
+			triggerElement: ".section",
+			duration: 1200,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(link1)
+
+			var scene7 = new ScrollMagic.Scene({
+			triggerElement: ".section",
+			duration: 950,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(link2)
+
+			var scene8 = new ScrollMagic.Scene({
+			triggerElement: ".section",
+			duration: 900,
+			triggerHook: 'onEnter',
+			triggerHook:(.9),
+			})
+			.setTween(link3)
+
 			controller.addScene([
 				scene,
 				scene2,
 				scene3,
 				scene4,
-				scene5
+				scene5,
+				scene6,
+				scene7,
+				scene8
 				// scene,
 				// scene2
 			]);
