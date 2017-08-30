@@ -541,9 +541,7 @@ a{
   font-size: .55em;
 }
 }
-@media only screen and (min-width:362px) and )
 @media only screen and (min-width : 362px) and (max-width: 549px) {
-   @media screen and (orientation:landscape) { }
   html,body{
     overflow-x: hidden;
   }
