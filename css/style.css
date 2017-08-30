@@ -434,8 +434,11 @@ footer.page-footer{
 }
 
 @media only screen and (min-width : 250px) and (max-width: 361px) {
+body{
+  overflow-x: hidden;
+}
   #name{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 0;
     width: 100%;
@@ -445,7 +448,7 @@ footer.page-footer{
     height: auto !important;
   }
   .projects{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .link{
     width: 24%;
@@ -529,6 +532,9 @@ a{
 }
 }
 @media only screen and (min-width : 362px) and (max-width: 549px) {
+  body{
+    overflow-x: hidden;
+  }
   .parallax-container{
     height: auto !important;
   }
@@ -558,14 +564,14 @@ nav{
   font-size: 1.8em;
 }
 #name{
-  font-size: 2.6em;
+  font-size: 2.5em;
   font-weight: bold;
   padding: 0;
   width: 100%;
     margin: 10px auto;
 }
 nav ul a{
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 nav .brand-logo{
   font-size: 1.75em;
@@ -650,6 +656,9 @@ a{
 }
 }
 @media only screen and (min-width : 550px) and (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+  }
 nav{
   height: 65px !important;
 }
@@ -712,6 +721,9 @@ font-size: 1.2em;
 }
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
+  body{
+    overflow-x: hidden;
+  }
 nav .brand-logo{
 margin: 0px;
 font-weight: bold;
@@ -802,6 +814,9 @@ font-size: 1.3em;
 }
 }
 @media only screen and (min-width: 980px) and (max-width: 1289px) {
+  body{
+    overflow-x: hidden;
+  }
 #name{
   font-size: 4.5em;
 }
@@ -891,6 +906,9 @@ font-size: 1.4em;
 
 }
 @media only screen and (min-width : 1290px) {
+  body{
+    overflow-x: hidden;
+  }
 nav{
   height: 65px !important;
 }
