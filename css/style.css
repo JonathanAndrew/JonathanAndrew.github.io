@@ -440,6 +440,9 @@ footer.page-footer{
 html,body{
   overflow-x: hidden;
 }
+.me{
+  width: 200px;
+}
   #name{
     font-size: 1.8em;
     font-weight: bold;
@@ -503,11 +506,14 @@ nav .brand-logo{
   line-height: 1.5rem;
 }
 .me{
-  width: 300px;
+  width: 150px;
   margin: 0 auto;
   border-radius: 50%;
   -webkit-shape-outside:none;
   shape-outside: none;
+}
+.about{
+  margin: 5px;
 }
 .about,.frameworks{
   text-align: center;
@@ -537,6 +543,12 @@ a{
 @media only screen and (min-width : 362px) and (max-width: 549px) {
   html,body{
     overflow-x: hidden;
+  }
+  .about{
+    margin: 5px;
+  }
+  .about-me-text{
+    line-height: 1.5rem;
   }
   .parallax-container{
     height: auto !important;
@@ -620,7 +632,7 @@ nav .brand-logo{
   line-height: 1.5rem;
 }
 .me{
-  width: 300px;
+  width: 200px;
   margin: 0 auto;
   border-radius: 50%;
   -webkit-shape-outside:none;
@@ -721,6 +733,12 @@ font-size: 1.2em;
 }
 .beervana,.contigo,.java-expresso{
   height:237px;
+}
+.about-me-text{
+  line-height: 1.5rem;
+}
+.about{
+  margin: 5px;
 }
 }
 @media only screen and (min-width : 768px) and (max-width: 979px) {
