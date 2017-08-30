@@ -42,9 +42,9 @@ name();
 	var elemit = TweenMax.to(testimonal,2,{opacity:1,ease: Expo.easeOut, delay:2.5})
 	var animateDan = TweenMax.to(dan,10,{marginRight:200,ease: Expo.easeOut,delay:7})
 	var arrow = TweenMax.to(arrow,2,{opacity:1, ease: Expo.easeOut,delay:1})
-	var link1 = TweenMax.to(links1,2,{marginRight:15,ease: Expo.easeOut,delay:1})
-	var link2 = TweenMax.to(links2,2,{marginRight:15,ease: Expo.easeOut,delay:2})
-	var link3 = TweenMax.to(links3,2,{marginRight:15,ease: Expo.easeOut,delay:3})
+	var link1 = TweenMax.to(links1,2,{marginRight:15,ease: Expo.easeOut})
+	var link2 = TweenMax.to(links2,2,{marginRight:15,ease: Expo.easeOut,delay:1})
+	var link3 = TweenMax.to(links3,2,{marginRight:15,ease: Expo.easeOut,delay:2})
 
 	var scene = new ScrollMagic.Scene({
 				triggerElement: ".section",
@@ -88,7 +88,7 @@ name();
 
 			var scene6 = new ScrollMagic.Scene({
 			triggerElement: ".section",
-			duration: 1200,
+			duration: 300,
 			triggerHook: 'onEnter',
 			triggerHook:(.9),
 			})
@@ -96,7 +96,7 @@ name();
 
 			var scene7 = new ScrollMagic.Scene({
 			triggerElement: ".section",
-			duration: 950,
+			duration:300,
 			triggerHook: 'onEnter',
 			triggerHook:(.9),
 			})
@@ -104,7 +104,7 @@ name();
 
 			var scene8 = new ScrollMagic.Scene({
 			triggerElement: ".section",
-			duration: 900,
+			duration: 300,
 			triggerHook: 'onEnter',
 			triggerHook:(.9),
 			})
