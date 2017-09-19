@@ -17,6 +17,9 @@ nav{
   top: 0;
   box-shadow: none;
 }
+.btn-floating{
+  width: 100px !important;
+}
 a{
   text-decoration: none;
 }
@@ -71,17 +74,17 @@ a:hover{
   margin:20px auto;
 }
 .beervana{
-  background-image: url('../images/beervana.png');
+  background-image: url('https://i.imgur.com/NmESeiN.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .contigo{
-  background-image: url('../images/contigo.png');
+  background-image: url('https://i.imgur.com/GWJugVT.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .java-expresso{
-  background-image: url('../images/java-expresso.png');
+  background-image: url('https://i.imgur.com/9TVHrJU.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -149,12 +152,20 @@ a:hover{
 }
 .link {
   overflow: hidden;
-  height: 35px;
   text-align: center;
   margin: 10px 10px;
+  float: right;
+  clear: both;
+  display: inline-block;
+  padding: 0 15px 0 15px;
+  font-weight: bold;
+  margin-right: -250px;
+  background-color: rgba(0,0,0,.5);
+  border: 2px solid #fff;
+  font-size: 1rem;
 }
 .seattle{
-  background-image: url('../images/seattle2.png');
+  background-image: url('https://i.imgur.com/5d9LWuW.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -384,18 +395,10 @@ a:hover{
   float: left;
   margin-right: 15px
 }
-.link{
-float: right;
-clear: both;
-display: inline-block;
-height: 50px;
-text-align: left;
-padding-left: 15px;
-font-weight: bold;
-margin-right: -250px;
-background-color: rgba(0,0,0,.5);
-width: 10%;
-border: 1px solid #fff;
+.link a{
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 .links img{
   margin-top:10px;
@@ -563,8 +566,6 @@ a{
 }
 .link{
   text-align: center;
-  width: 24%;
-  padding:5px;
 }
 .link a{
   color: #fff !important;
