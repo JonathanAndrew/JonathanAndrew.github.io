@@ -74,17 +74,17 @@ a:hover{
   margin:20px auto;
 }
 .beervana{
-  background-image: url('../images/beervanaTny.png');
+  background-image: url('https://i.imgur.com/NmESeiN.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .contigo{
-  background-image: url('../images/contigoTny.png');
+  background-image: url('https://i.imgur.com/GWJugVT.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 .java-expresso{
-  background-image: url('../images/java-expressoTny.png');
+  background-image: url('https://i.imgur.com/9TVHrJU.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -165,7 +165,7 @@ a:hover{
   font-size: 1rem;
 }
 .seattle{
-  background-image: url('../images/seattle2Tny.png');
+  background-image: url('https://i.imgur.com/5d9LWuW.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
