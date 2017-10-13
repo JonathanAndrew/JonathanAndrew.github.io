@@ -22,7 +22,7 @@ name();
 	//Aoo content hvoer
 	$('.beervana,.contigo,.java-expresso').hover(function(){
 		var content = $(this).children().find('.app-content');
-		TweenMax.to(content,1,{top:0,paddingTop:50,paddingLeft:5,paddingRight:5,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
+		TweenMax.to(content,1,{top:-30,paddingTop:25,paddingLeft:5,paddingRight:5,backgroundColor:'rgba(0,0,0,.7)', ease: Power2.easeOut });
 	},function(){
 		var content = $(this).children().find('.app-content');
 		TweenMax.to(content,1,{top:500,paddingTop:0,paddingLeft:5,paddingRight:5, ease: Power2.easeOut });
